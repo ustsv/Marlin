@@ -161,6 +161,10 @@ cmake-build-*
 # Python
 __pycache__
 
+#QtCreator
+/*.pro
+/*.user
+
 # IOLogger logs
 *_log.csv
 

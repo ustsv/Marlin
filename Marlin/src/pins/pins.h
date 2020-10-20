@@ -69,7 +69,7 @@
 #elif MB(RAMPS_13_EFB, RAMPS_13_EEB, RAMPS_13_EFF, RAMPS_13_EEF, RAMPS_13_SF)
   #include "ramps/pins_RAMPS_13.h"              // ATmega2560, ATmega1280                 env:mega2560 env:mega1280
 #elif MB(RAMPS_14_EFB, RAMPS_14_EEB, RAMPS_14_EFF, RAMPS_14_EEF, RAMPS_14_SF)
-  #include "ramps/pins_RAMPS.h"                 // ATmega2560, ATmega1280                 env:mega2560 env:mega1280
+  #include "ramps/pins_RAMPS.h"                 // ATmega2560, ATmega1280                 env:mega2560 env:mega1280 env:mega2560_ustsv
 #elif MB(RAMPS_PLUS_EFB, RAMPS_PLUS_EEB, RAMPS_PLUS_EFF, RAMPS_PLUS_EEF, RAMPS_PLUS_SF)
   #include "ramps/pins_RAMPS_PLUS.h"            // ATmega2560, ATmega1280                 env:mega2560 env:mega1280
 
@@ -480,7 +480,7 @@
 #elif MB(GTM32_REV_B)
   #include "stm32f1/pins_GTM32_REV_B.h"         // STM32F103VE                            env:STM32F103VE env:STM32F103RE_maple
 #elif MB(MORPHEUS)
-  #include "stm32f1/pins_MORPHEUS.h"            // STM32F103RE                            env:STM32F103RE env:STM32F103RE_maple
+  #include "stm32f1/pins_MORPHEUS.h"            // STM32F1                                env:STM32F103RE env:morpheus_ustsv
 #elif MB(CHITU3D)
   #include "stm32f1/pins_CHITU3D.h"             // STM32F103ZE                            env:STM32F103ZE env:STM32F103RE_maple
 #elif MB(MKS_ROBIN)

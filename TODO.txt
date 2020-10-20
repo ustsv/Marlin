@@ -1,0 +1,16 @@
+platformio project init --ide qtcreator
+platformio -f -c qtcreator run
+platformio -f -c qtcreator run --target clean
+platformio -f -c qtcreator run --target upload
+
+platformio lib --global install "Adafruit MAX31865 library"@~1.1.0
+platformio lib --global install U8glib-HAL
+platformio lib --global install TMC26XStepper=https://github.com/trinamic/TMC26XStepper/archive/master.zip
+platformio lib --global install SailfishLCD=https://github.com/mikeshub/SailfishLCD/archive/master.zip
+platformio lib --global install "U8glib-HAL_ID1932"
+platformio lib --global install "SlowSoftI2CMaster"
+platformio lib --global install LiquidCrystal
+platformio lib --global install TMCStepper
+platformio lib --global install "Adafruit NeoPixel"
+platformio lib --global install "Arduino-L6470"
+platformio lib --global install "LiquidTWI2"
